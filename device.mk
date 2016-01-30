@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/qcril.db:system/etc/motorola/qcril.db
 
-# Input device files for clark
+# Input device files for kinzie
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
@@ -96,7 +96,7 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.msm8992
+    power.msm8994
 
 
 # NFC packages
@@ -146,10 +146,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    hwcomposer.msm8992 \
-    gralloc.msm8992 \
-    copybit.msm8992 \
-    memtrack.msm8992 \
+    hwcomposer.msm8994 \
+    gralloc.msm8994 \
+    copybit.msm8994 \
+    memtrack.msm8994 \
     liboverlay \
     libqdutils \
     libqdMetaData
@@ -173,12 +173,12 @@ PRODUCT_BOOT_JARS += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8992
+    lights.msm8994
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8992 \
-    audio_policy.msm8992 \
+    audio.primary.msm8994 \
+    audio_policy.msm8994 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default
@@ -279,5 +279,5 @@ $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.m
 # setup base hwui configs
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-hwui-memory.mk)
 
-$(call inherit-product-if-exists, hardware/qcom/msm8994/msm8992.mk)
+$(call inherit-product-if-exists, hardware/qcom/msm8994/msm8994.mk)
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8994/msm8994-gpu-vendor.mk)
