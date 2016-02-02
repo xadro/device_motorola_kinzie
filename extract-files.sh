@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #set -e
-export DEVICE=clark
+export DEVICE=kinzie
 export VENDOR=motorola
 
 if [ $# -eq 0 ]; then
@@ -21,7 +21,7 @@ else
 fi
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
-rm -rf $BASE/*
+#rm -rf $BASE/*
 
 mkdir -p $BASE/lib64/hw
 mkdir -p $BASE/lib/hw

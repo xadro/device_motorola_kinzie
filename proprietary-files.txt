@@ -1,5 +1,5 @@
 ## NEEDED?
-vendor/lib/libwifiscanner.so
+#vendor/lib/libwifiscanner.so
 vendor/lib/drm/libdrmwvmplugin.so
 
 ## WORKING
@@ -31,7 +31,7 @@ vendor/lib/rfsa/adsp/libmare_hexagon_skel.so
 bin/fm_qsoc_patches
 vendor/bin/audioflacapp
 lib/libaudioroute.so
-lib/hw/audio.primary.msm8992.so
+lib/hw/audio.primary.msm8994.so
 lib/hw/audio.motvr.default.so
 lib/libmotaudioutils.so
 lib/libqcomfm_jni.so
@@ -90,7 +90,7 @@ etc/firmware/vrgain.bin
 bin/btnvtool
 bin/hci_qcomm_init
 bin/wcnss_filter
-etc/user_bhd_psy.conf
+#etc/user_bhd_psy.conf
 etc/firmware/nvm_tlv.bin
 etc/firmware/nvm_tlv_1.3.bin
 etc/firmware/nvm_tlv_2.1.bin
@@ -112,7 +112,7 @@ etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 etc/firmware/cpp_firmware_v1_6_0.fw
 etc/firmware/cpp_firmware_v1_8_0.fw
-lib/hw/camera.msm8992.so
+lib/hw/camera.msm8994.so
 lib/libmot_lux_standardization.so
 lib/libadvalgcore.so
 lib/libAisAdapter.so
@@ -258,21 +258,21 @@ bin/perfd
 vendor/lib/libqti-perfd-client.so
 
 # DM/Sprint
--app/DMConfigUpdateLight/DMConfigUpdateLight.apk
--app/HiddenMenuLight/HiddenMenuLight.apk
-etc/permissions/com.android.omadm.service.xml
-etc/sysconfig/whitelist_com.android.omadm.service.xml
-lib/libdmengine.so
-lib/libdmjavaplugin.so
--priv-app/CQATest/CQATest.apk
--priv-app/ConnMO/ConnMO.apk
--priv-app/DCMO/DCMO.apk
--priv-app/DMService/DMService.apk
-lib/libdmengine.so:priv-app/DMService/lib/arm/libdmengine.so
-lib/libdmjavaplugin.so:priv-app/DMService/lib/arm/libdmjavaplugin.so
--priv-app/DiagMon/DiagMon.apk
--priv-app/LifetimeData/LifetimeData.apk
--priv-app/SprintDM/SprintDM.apk
+#-app/DMConfigUpdateLight/DMConfigUpdateLight.apk
+#-app/HiddenMenuLight/HiddenMenuLight.apk
+#etc/permissions/com.android.omadm.service.xml
+#etc/sysconfig/whitelist_com.android.omadm.service.xml
+#lib/libdmengine.so
+#lib/libdmjavaplugin.so
+#-priv-app/CQATest/CQATest.apk
+#-priv-app/ConnMO/ConnMO.apk
+#-priv-app/DCMO/DCMO.apk
+#-priv-app/DMService/DMService.apklib
+#lib/libdmengine.so:priv-app/DMService/lib/arm/libdmengine.so
+#lib/libdmjavaplugin.so:priv-app/DMService/lib/arm/libdmjavaplugin.so
+#-priv-app/DiagMon/DiagMon.apk
+#-priv-app/LifetimeData/LifetimeData.apk
+#-priv-app/SprintDM/SprintDM.apk
 
 # DRM
 # TZBSP
@@ -433,7 +433,7 @@ vendor/lib/libvendorconn.so
 vendor/lib/libwqe.so
 
 # Radio
--app/ims/ims.apk
+#-app/ims/ims.apk
 -app/MotoSignatureApp/MotoSignatureApp.apk
 -priv-app/atfwd/atfwd.apk
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -452,26 +452,26 @@ bin/rmt_storage
 vendor/bin/qti
 etc/diag_mdlog/Bluetooth_V1.cfg
 etc/diag_mdlog/Bluetooth_audio_V1.cfg
-etc/diag_mdlog/Connection_Issues_V8_wifi.cfg
-etc/diag_mdlog/Connection_Issues_V9.cfg
-etc/diag_mdlog/Connection_Issues_V9_wifi.cfg
-etc/diag_mdlog/FIT_V18_1.cfg
-etc/diag_mdlog/FIT_V18_2_volte_full_ip.cfg
-etc/diag_mdlog/FIT_V18_3_audio.cfg
-etc/diag_mdlog/GNSS_SUPL_V5.cfg
+#etc/diag_mdlog/Connection_Issues_10_wifi.cfg
+etc/diag_mdlog/Connection_Issues_V10.cfg
+#etc/diag_mdlog/Connection_Issues_V9_wifi.cfg
+etc/diag_mdlog/FIT_V19_1.cfg
+etc/diag_mdlog/FIT_V19_2_volte_full_ip.cfg
+etc/diag_mdlog/FIT_V19_3_audio.cfg
+etc/diag_mdlog/GNSS_SUPL_V6.cfg
 etc/diag_mdlog/GNSS_V4.cfg
 etc/diag_mdlog/Vzw_Connection_Issues_V1.cfg
 etc/diag_mdlog/WLAN_V1.cfg
 etc/diag_mdlog/default.cfg
 etc/diag_mdlog/default.opts
-etc/permissions/com.verizon.ims.xml
-etc/permissions/ims.xml
+#etc/permissions/com.verizon.ims.xml
+#etc/permissions/ims.xml
 etc/permissions/org.simalliance.openmobileapi.xml
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 framework/qcnvitems.jar
 framework/qcrilhook.jar
-framework/com.verizon.ims.jar
+#framework/com.verizon.ims.jar
 framework/org.simalliance.openmobileapi.jar
 lib/libmdmcutback.so
 lib/libmotext_inf.so
@@ -479,7 +479,7 @@ lib/libqmimotext.so
 lib64/libadropbox.so
 -vendor/lib/libtime_genoff.so
 vendor/lib/libimscamera_jni.so
-vendor/lib/libimsmedia_jni.so
+#vendor/lib/libimsmedia_jni.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
@@ -490,18 +490,18 @@ vendor/lib/libxml.so
 vendor/lib64/libqcmaputils.so
 
 # Touchscreen firmware
-etc/firmware/synaptics-s2726-15052160-1d19d9-clark.tdat
-etc/firmware/synaptics-s3528-15071401-1e29b4-clark.tdat
-etc/firmware/synaptics-s3528ar-15071401-1e29b4-clark.tdat
-bin/init.mmi.touch.sh
+etc/firmware/synaptics-s3528-15070602-1def27-kinzie.tdat
+etc/firmware/synaptics-s3528ks-14102100-1a96a7-kinzie.tdat
+etc/firmware/synaptics-s3528ks2-15070602-1def27-kinzie.tdat
+#bin/init.mmi.touch.sh
 
 # Sensors
 bin/motosh
 etc/firmware/sensorhubfw.bin
-lib/hw/sensors.msm8992.so
+lib/hw/sensors.msm8994.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libSubSystemShutdown.so
-lib64/hw/sensorhub.msm8992.so
+lib64/hw/sensorhub.msm8994.so
 vendor/lib/libsensor1.so
 etc/sensors/sensor_def_qcomdev.conf
 

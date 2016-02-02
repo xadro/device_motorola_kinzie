@@ -29,7 +29,7 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := XT1580
 PRODUCT_MANUFACTURER := motorola
 
-$(call inherit-product, device/motorola/kinzie/device.mk)
+$(call inherit-product, device/moto/kinzie/device.mk)
 $(call inherit-product-if-exists, vendor/motorola/kinzie/kinzie-vendor.mk)
 
 PRODUCT_NAME := aosp_kinzie

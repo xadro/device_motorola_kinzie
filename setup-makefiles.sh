@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DEVICE=clark
+DEVICE=kinzie
 VENDOR=motorola
 YEAR=$(date +%Y)
 

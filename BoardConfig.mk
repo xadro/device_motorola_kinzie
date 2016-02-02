@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/kinzie
+DEVICE_PATH := device/moto/kinzie
 
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_SMP := true
@@ -48,8 +48,8 @@ TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8994
-TARGET_KERNEL_CONFIG := kinzie_defconfig
+TARGET_KERNEL_SOURCE := kernel/motorola_msm
+TARGET_KERNEL_CONFIG := msm8994_defconfig
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_ARCH := arm64
@@ -173,7 +173,6 @@ TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_kinzie.cpp
 
 # TWRP definitions
 DEVICE_RESOLUTION := 1440x2560
-TW_BOARD_CUSTOM_GRAPHICS := ../../../$(DEVICE_PATH)/recovery/graphics.c
 TW_INCLUDE_L_CRYPTO := true
 TW_TARGET_USES_QCOM_BSP := true
 TW_NEW_ION_HEAP := true
