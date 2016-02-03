@@ -748,6 +748,15 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
     user camera
     group camera system inet input graphics
 
+service persistentLogging /system/bin/logcat -r 1024 -n 9 -v threadTime -f /cache/logs/log
+    user system
+    group system log
+    disabled
+    
+on post-fs
+    mkdir /cache/logs 0775 system log
+    start persistentLogging
+
 on property:vold.decrypt=trigger_reset_main
     stop gnss-svcd
 
