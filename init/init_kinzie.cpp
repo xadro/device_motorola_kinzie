@@ -51,26 +51,44 @@ void vendor_load_properties()
 
     property_set("ro.product.model", sku);
 
-    if (strstr(sku, "XT1572")) {
-        property_set("ro.product.display", "Moto X Style");
+    if (strstr(sku, "XT1580")) {
+        property_set("ro.product.display", "Moto X Force");
         property_set("ro.telephony.default_network", "9");
         property_set("telephony.lteOnCdmaDevice", "0");
         // Region specifics
         if (strstr(car, "retin")) {
-            /* India */
+            // India -- probably doesnt exist for kinzie
             property_set("persist.radio.multisim.config", "dsds");
             property_set("persist.radio.plmn_name_cmp", "1");
             property_set("ro.telephony.ril.config", "simactivation");
             property_set("ro.fsg-id", "emea_dsds");
             property_set("ro.build.description", "clark_retasia_ds-user 6.0 MPH24.49-18 18 release-keys");
             property_set("ro.build.fingerprint", "motorola/clark_retasia_ds/clark_ds:6.0/MPH24.49-18/18:user/release-keys");
-        } else {
-            property_set("ro.build.description", "clark_reteu-user 5.1.1 LPH23.116-18 23 release-keys");
-            property_set("ro.build.fingerprint", "motorola/clark_reteu/clark:5.1.1/LPH23.116-18/23:user/release-keys");
-        }
-    } else if (strstr(sku, "XT1575")) {
-        /* US */
-        property_set("ro.product.display", "Moto X Pure Edition");
+        } else if (strstr(car, "reteu")) {
+            //UK/EU  need to retrieve data from stock fw 
+            property_set("ro.build.description", "kinzie_reteu-user 5.1.1 LPK23.145-5 6 release-keys");
+            property_set("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:5.1.1/LPK23.145-5/6:user/release-keys");
+        } else if (strstr(car, "retla")) {
+            //BRAZIL need to retrieve data from stock fw 
+            property_set("ro.build.description", "kinzie_reteu-user 5.1.1 LPK23.145-5 6 release-keys");
+            property_set("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:5.1.1/LPK23.145-5/6:user/release-keys");
+        } else if (strstr(car, "retmx")) {
+            //MEXICO need to retrieve data from stock fw 
+            property_set("ro.build.description", "kinzie_reteu-user 5.1.1 LPK23.145-5 6 release-keys");
+            property_set("ro.build.fingerprint", "motorola/kinzie_reteu/kinzie:5.1.1/LPK23.145-5/6:user/release-keys");
+        } 
+    } else if (strstr(sku, "XT1581")) {
+        // CHINA need to retrieve data from stock fw 
+        property_set("ro.product.display", "Moto X Force");
+        property_set("ro.ril.force_eri_from_xml", "true");
+        property_set("ro.telephony.get_imsi_from_sim", "true");
+        property_set("ro.telephony.default_network", "10");
+        property_set("telephony.lteOnCdmaDevice", "1");
+        property_set("ro.build.description", "clark_retus-user 6.0 MPH24.49-18 18 release-keys");
+        property_set("ro.build.fingerprint", "motorola/clark_retus/clark:6.0/MPH24.49-18/18:user/release-keys");
+    } else if (strstr(sku, "XT1585")) {
+        // US need to retrieve data from stock fw  
+        property_set("ro.product.display", "Moto X Force");
         property_set("ro.ril.force_eri_from_xml", "true");
         property_set("ro.telephony.get_imsi_from_sim", "true");
         property_set("ro.telephony.default_network", "10");

@@ -112,7 +112,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.clark \
+    camera.kinzie \
     libcamera \
     libqomx_core \
     libmm-qcamera \
